@@ -2,6 +2,8 @@
 
 Easiset way to start the app is to run `docker-compose up` or `sudo docker-compose up` if user doesn't have required permissions
 
+Front will be started at http://localhost:1337 and back will be started at http://localhost:8881
+
 Building the docker images might take a while
 
 This is obviously not a production ready setup
@@ -28,6 +30,8 @@ Inside folder `./back`
 
 `yarn start:dev`
 
+App will be available at http://localhost:8881
+
 ### Front
 
 Inside folder `./front`
@@ -37,3 +41,5 @@ Inside folder `./front`
 `yarn install`
 
 `yarn start`
+
+App will be available at http://localhost:3000
