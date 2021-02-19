@@ -32,4 +32,4 @@ Inside folder `./front`
 
 `echo "REACT_APP_API_URL=http://localhost:8881" > .env`
 
-`yarn start:dev`
+`yarn start`
