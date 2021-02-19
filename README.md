@@ -24,6 +24,8 @@ Inside folder `./back`
 
 `echo "DATABASE_URL=mongodb://localhost:27017/books" > .env`
 
+`yarn install`
+
 `yarn start:dev`
 
 ### Front
@@ -31,5 +33,7 @@ Inside folder `./back`
 Inside folder `./front`
 
 `echo "REACT_APP_API_URL=http://localhost:8881" > .env`
+
+`yarn install`
 
 `yarn start`
