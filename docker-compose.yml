@@ -1,0 +1,28 @@
+version: '3.1'
+
+services:
+  mongodb:
+    image: mongo
+    restart: always
+  
+  back:
+    build: ./back
+    container_name: back
+    depends_on: 
+      - mongodb
+    restart: always
+    ports: 
+      - 8881:8881
+    environment: 
+      - DATABASE_URL=mongodb://mongodb:27017/buutti-books
+  front:
+    build: 
+      context: ./front
+      args: 
+        api_url: http://localhost:8881
+    container_name: front
+    depends_on:
+      - back
+    restart: always     
+    ports: 
+      - 1337:80
