@@ -8,7 +8,7 @@ This is obviously not a production ready setup
 
 Requires docker and docker-compose
 
-## Without docker
+## Without docker (linux and mac)
 
 You can start dev servers without docker with the following steps
 
